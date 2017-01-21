@@ -3,11 +3,8 @@
  */
 
 angular.module ('Register')
-    .controller ('NewMemberCtrl', function ($scope, $stateParams, $state) {
+    .controller ('NewMemberCtrl', function ($scope, $stateParams) {
+        $scope.NewMember = $stateParams.MemberName;
 
-
-        $scope.UpdateMember = function () {
-            $state.go ("NewMember");
-        };
 
     });

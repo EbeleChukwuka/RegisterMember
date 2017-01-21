@@ -15,11 +15,14 @@ NMber.config(function ($stateProvider, $urlRouterProvider) {
         .state("NewMember", {
             url:"/NewMember",
             templateUrl:"html/NewMember.html"
+
         })
 
         .state("UpdateMember", {
-            url:"/UpdateMember",
-            templateUrl:"html/UpdateMember.html"
+            url:"/UpdateMember/:MemberName",
+            templateUrl:"html/UpdateMember.html",
+            controller:"NewMemberCtrl"
+
         });
 
     });
